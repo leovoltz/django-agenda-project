@@ -1,3 +1,4 @@
+# flake8: noqa
 """
 Django settings for project project.
 
@@ -127,9 +128,14 @@ STATICFILES_DIRS = (
 STATIC_ROOT = BASE_DIR / 'static'  # collectstatic
 
 MEDIA_URL = 'media/'
-MEDIA_ROOT = BASE_DIR / 'media' # midias
+MEDIA_ROOT = BASE_DIR / 'media'  # midias
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+try:
+    from project.local_settings import *
+except ImportError:
+    ...
