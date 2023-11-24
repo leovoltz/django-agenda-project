@@ -8,19 +8,20 @@ Certifique-se de ter o Python e o Django instalados em seu sistema. Você pode i
 
 ```bash
 pip install -r requirements.txt
+```
 
 ## Configuração do Banco de Dados
 Certifique-se de configurar o banco de dados antes de iniciar o aplicativo. Execute o seguinte comando para aplicar as migraçõe
 
-```base
+```bash
 python manage.py migrate
-
+```
 ## Executando o Servidor de Desenvolvimento
 Para iniciar o servidor de desenvolvimento, use o seguinte comando:
 
 ```bash
 python manage.py runserver
-
+```
 O aplicativo estará disponível em http://localhost:8000/.
 
 # Uso
